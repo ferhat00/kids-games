@@ -1,0 +1,40 @@
+{
+  "id": "vehicle_sorter",
+  "title": "Vehicle Sorter",
+  "description": "Sort vehicles into the right bins!",
+  "thumbnail_vehicles": ["airplane", "car", "train"],
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "assets": {
+    "images": {
+      "_comment": "Add image URLs here — AssetManager downloads and caches them automatically."
+    },
+    "sounds": {
+      "_comment": "Place .wav files in assets/games/vehicle_sorter/sounds/",
+      "correct": "sounds/correct.wav",
+      "wrong":   "sounds/wrong.wav",
+      "level_up":"sounds/level_up.wav"
+    }
+  },
+  "categories": [
+    {
+      "id":       "road",
+      "label":    "ROAD",
+      "vehicles": ["car", "truck", "bus", "motorcycle", "bicycle", "ambulance", "firetruck"]
+    },
+    {
+      "id":       "air",
+      "label":    "AIR",
+      "vehicles": ["airplane", "helicopter", "rocket", "balloon"]
+    },
+    {
+      "id":       "water",
+      "label":    "WATER",
+      "vehicles": ["train", "ship", "sailboat", "submarine"]
+    }
+  ],
+  "scoring": {
+    "base_per_sort":   100,
+    "level_speed_bonus": 20,
+    "leaderboard":      true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "memory_match",
+  "title": "Memory Match",
+  "description": "Find matching vehicle pairs!",
+  "thumbnail_vehicles": ["car", "airplane", "train"],
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "assets": {
+    "images": {},
+    "sounds": {
+      "flip":   "sounds/flip.wav",
+      "match":  "sounds/match.wav",
+      "win":    "sounds/win.wav",
+      "oops":   "sounds/oops.wav"
+    }
+  },
+  "scoring": {
+    "base_per_match":   100,
+    "turn_penalty":     2,
+    "time_bonus_max":   300,
+    "leaderboard":      true
+  },
+  "grid": {
+    "cols": 4,
+    "rows": 4
+  }
+}

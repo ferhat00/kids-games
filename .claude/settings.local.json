@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pip install pygame --pre --quiet)",
+      "Bash(python -m py_compile framework/game_framework.py framework/asset_manager.py framework/ui_components.py framework/game_manager.py games/memory_match/memory_match.py games/vehicle_sorter/vehicle_sorter.py main.py)"
+    ]
+  }
+}
