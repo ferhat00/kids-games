@@ -50,6 +50,13 @@ AVAILABLE_GAMES: List[Dict] = [
         "card_colour":  (78, 205, 196),    # teal
         "badge_colour": (88, 214, 141),
     },
+    {
+        "id":           "dream_flight",
+        "module":       "games.dream_flight.dream_flight",
+        "class":        "DreamFlightGame",
+        "card_colour":  (110, 70, 190),    # dreamy purple
+        "badge_colour": (255, 200, 50),
+    },
 ]
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -286,6 +293,7 @@ class GameManager:
             self._instantiate_game(self._fade_game_entry)
         elif self._fade_target_state == self.MENU:
             if self._active_game:
+                pygame.mixer.stop()
                 self._assets.unload_game_assets(self._active_game_id)
             self._active_game = None
             self._active_game_id = ""

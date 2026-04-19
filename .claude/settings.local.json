@@ -6,7 +6,16 @@
       "Bash(py -3.12 --version)",
       "Bash(py -3.12 -m venv game)",
       "Bash(./game/Scripts/pip install:*)",
-      "Bash(./game/Scripts/python -c \"import pygame; print\\('pygame', pygame.version.ver\\)\")"
+      "Bash(./game/Scripts/python -c \"import pygame; print\\('pygame', pygame.version.ver\\)\")",
+      "Bash(cd c:\\\\\\\\Users\\\\\\\\Ferhat\\\\\\\\Documents\\\\\\\\GitHub\\\\\\\\kids-games)",
+      "Bash(python -c \"import games.dream_flight.dream_flight\")",
+      "Bash(python -m py_compile games/dream_flight/dream_flight.py)",
+      "Bash(python -m pytest tests/test_dream_flight.py -v)",
+      "Bash(pip list *)",
+      "Bash(py -3.12 -m pip list)",
+      "Bash(py -3.12 -m pip install pygame --quiet)",
+      "Bash(py -3.12 -m pytest tests/test_dream_flight.py -v)",
+      "Bash(py -3.12 -m pip install pytest --quiet)"
     ]
   }
 }
