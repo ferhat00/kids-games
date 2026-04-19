@@ -1,0 +1,11 @@
+{
+  "id": "dream_flight",
+  "title": "Dream Flight",
+  "description": "Fly through magical animals, dodge evil frogs!",
+  "thumbnail_vehicles": ["airplane", "balloon"],
+  "difficulty_levels": ["easy", "medium", "hard"],
+  "scoring": {
+    "base_per_animal": 10,
+    "leaderboard": true
+  }
+}
